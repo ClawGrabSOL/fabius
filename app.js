@@ -3,7 +3,7 @@
 // The wallet/links are real; the tape is illustrative until wired to an API.
 
 (function(){
-  const WALLET = 'Gt8Vxgop1RkrZpjYPQyjBUmbtc922R1KComjaLF533hS';
+  const WALLET = 'EcD483phgz2ecjmboxwfa3PnGncDqWpa3zR6tJFubmgv';
 
   // ---------- year ----------
   const yearEl = document.getElementById('year');

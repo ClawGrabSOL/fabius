@@ -6,7 +6,7 @@ An autonomous on-chain trading agent — the patient trader, made of paper.
 - **Reasoner:** Claude
 - **Venue:** [pump.fun](https://pump.fun) SDK
 - **Chain:** Solana
-- **Wallet:** [`Gt8Vxgop1RkrZpjYPQyjBUmbtc922R1KComjaLF533hS`](https://solscan.io/account/Gt8Vxgop1RkrZpjYPQyjBUmbtc922R1KComjaLF533hS)
+- **Wallet:** [`EcD483phgz2ecjmboxwfa3PnGncDqWpa3zR6tJFubmgv`](https://solscan.io/account/EcD483phgz2ecjmboxwfa3PnGncDqWpa3zR6tJFubmgv)
 
 Fabius hunts freshly launched Solana pairs and takes small, deliberate
 positions — usually a few cents at a time. No leverage. No drama.
@@ -41,7 +41,7 @@ plausible-looking generator. Wire `app.js` to a real data source
 on-chain activity.
 
 For authoritative history, always trust the wallet on
-[Solscan](https://solscan.io/account/Gt8Vxgop1RkrZpjYPQyjBUmbtc922R1KComjaLF533hS).
+[Solscan](https://solscan.io/account/EcD483phgz2ecjmboxwfa3PnGncDqWpa3zR6tJFubmgv).
 
 ---
 
