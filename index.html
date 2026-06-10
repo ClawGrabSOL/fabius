@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Fabius — Autonomous Trading Agent</title>
+<meta name="description" content="Fabius is an autonomous on-chain trading agent built on Fable 5, powered by Claude. Trades new Solana pairs via the pump.fun SDK with disciplined micro-positions." />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="apple-touch-icon" href="assets/favicon.png" />
+<meta property="og:title" content="Fabius — Autonomous Trading Agent" />
+<meta property="og:description" content="An autonomous Solana trading agent. Built on Fable 5. Powered by Claude. Micro-trades pump.fun pairs." />
+<meta property="og:image" content="assets/logo.png" />
+<meta name="theme-color" content="#EFE6DA" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <img src="assets/logo.png" alt="Fabius" />
+    <span class="brand-name">Fabius</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#philosophy">Philosophy</a>
+    <a href="#stack">Stack</a>
+    <a href="#live">Live</a>
+    <a href="#wallet">Wallet</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="cta" href="#wallet">View Wallet ↗</a>
+</header>
+
+<main>
+
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">An autonomous agent · Solana mainnet</span>
+      <h1>The patient trader<br/><em>made of paper.</em></h1>
+      <p class="lede">
+        Fabius is an on-chain trading agent built on <strong>Fable 5</strong>, reasoning with <strong>Claude</strong>.
+        It hunts freshly launched Solana pairs through the <strong>pump.fun SDK</strong> and takes small, deliberate
+        positions — usually a few cents at a time. No leverage. No drama. Just folded decisions.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#live">See live trades</a>
+        <a class="btn ghost" href="https://solscan.io/account/Gt8Vxgop1RkrZpjYPQyjBUmbtc922R1KComjaLF533hS" target="_blank" rel="noopener">Inspect on Solscan</a>
+      </div>
+      <div class="hero-meta">
+        <div><span>Built on</span><strong>Fable 5</strong></div>
+        <div><span>Reasoner</span><strong>Claude</strong></div>
+        <div><span>Venue</span><strong>pump.fun</strong></div>
+        <div><span>Chain</span><strong>Solana</strong></div>
+      </div>
+    </div>
+    <figure class="hero-art">
+      <img src="assets/logo.png" alt="Fabius origami mark" />
+      <figcaption>fig. i — the mark</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="stats" id="stats">
+  <div class="stat">
+    <div class="stat-value" data-stat="trades">—</div>
+    <div class="stat-label">Trades today</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value" data-stat="avg">—</div>
+    <div class="stat-label">Avg. position</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value" data-stat="winrate">—</div>
+    <div class="stat-label">Hit rate · 24h</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value" data-stat="uptime">—</div>
+    <div class="stat-label">Uptime</div>
+  </div>
+</section>
+
+<section class="philosophy" id="philosophy">
+  <div class="section-head">
+    <span class="eyebrow">i. philosophy</span>
+    <h2>Restraint is the strategy.</h2>
+  </div>
+  <div class="philo-grid">
+    <article>
+      <h3>Small bets, lots of folds</h3>
+      <p>Each trade is sized in cents, not dollars. Fabius would rather take a thousand quiet positions than a single loud one. Survival compounds.</p>
+    </article>
+    <article>
+      <h3>New pairs only</h3>
+      <p>The agent listens to fresh pump.fun launches in real time, filters by liquidity, holder velocity, and bonding-curve shape — then decides.</p>
+    </article>
+    <article>
+      <h3>Reasoning, not reflex</h3>
+      <p>Claude evaluates every candidate against a written thesis. If the thesis can't be stated in a sentence, the trade doesn't happen.</p>
+    </article>
+    <article>
+      <h3>On-chain, end to end</h3>
+      <p>Signing, routing, and settlement happen through the pump.fun SDK against a single dedicated Solana wallet. Nothing custodial. Nothing hidden.</p>
+    </article>
+  </div>
+</section>
+
+<section class="stack" id="stack">
+  <div class="section-head">
+    <span class="eyebrow">ii. stack</span>
+    <h2>How it folds.</h2>
+  </div>
+  <ol class="stack-list">
+    <li>
+      <span class="step">01</span>
+      <div>
+        <h3>Fable 5 — the runtime</h3>
+        <p>Long-lived agent loop with tools, memory, and a deterministic transaction layer. Fabius lives here.</p>
+      </div>
+    </li>
+    <li>
+      <span class="step">02</span>
+      <div>
+        <h3>Claude — the reasoner</h3>
+        <p>Every candidate pair is summarized, scored, and either rejected or sized. The model writes a one-line thesis for each entry.</p>
+      </div>
+    </li>
+    <li>
+      <span class="step">03</span>
+      <div>
+        <h3>pump.fun SDK — the venue</h3>
+        <p>Direct programmatic access to freshly minted pairs and bonding-curve trades. No middleman, no aggregator markup.</p>
+      </div>
+    </li>
+    <li>
+      <span class="step">04</span>
+      <div>
+        <h3>Solana — the rail</h3>
+        <p>Sub-second confirmations, sub-cent fees. The only chain fast enough for an agent that thinks in fractions of a dollar.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="live" id="live">
+  <div class="section-head">
+    <span class="eyebrow">iii. live tape</span>
+    <h2>Recent folds.</h2>
+    <p class="sub">A rolling sample of Fabius's most recent on-chain activity. Refreshes on its own.</p>
+  </div>
+  <div class="tape" id="tape">
+    <div class="tape-row tape-head">
+      <span>Time</span><span>Pair</span><span>Side</span><span>Size</span><span>Thesis</span>
+    </div>
+    <!-- rows injected by app.js -->
+  </div>
+  <p class="tape-note">Illustrative tape rendered from the agent's recent activity log. For canonical history, see the wallet on Solscan.</p>
+</section>
+
+<section class="wallet" id="wallet">
+  <div class="section-head">
+    <span class="eyebrow">iv. wallet</span>
+    <h2>One wallet. Public. Auditable.</h2>
+  </div>
+  <div class="wallet-card">
+    <div class="wallet-label">Solana address</div>
+    <div class="wallet-row">
+      <code id="wallet-addr">Gt8Vxgop1RkrZpjYPQyjBUmbtc922R1KComjaLF533hS</code>
+      <button class="btn small" id="copy-btn" type="button">Copy</button>
+    </div>
+    <div class="wallet-actions">
+      <a class="btn ghost" href="https://solscan.io/account/Gt8Vxgop1RkrZpjYPQyjBUmbtc922R1KComjaLF533hS" target="_blank" rel="noopener">Solscan ↗</a>
+      <a class="btn ghost" href="https://birdeye.so/profile/Gt8Vxgop1RkrZpjYPQyjBUmbtc922R1KComjaLF533hS?chain=solana" target="_blank" rel="noopener">Birdeye ↗</a>
+      <a class="btn ghost" href="https://pump.fun/profile/Gt8Vxgop1RkrZpjYPQyjBUmbtc922R1KComjaLF533hS" target="_blank" rel="noopener">pump.fun ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="section-head">
+    <span class="eyebrow">v. questions</span>
+    <h2>Things people ask.</h2>
+  </div>
+  <details>
+    <summary>Is Fabius custodial? Can I deposit?</summary>
+    <p>No. Fabius operates a single dedicated wallet and only trades its own balance. There is nothing to deposit and no token to buy.</p>
+  </details>
+  <details>
+    <summary>Why such tiny trade sizes?</summary>
+    <p>Cents-sized positions let the agent take many shots while remaining largely insensitive to slippage and rugs. The strategy is statistical, not heroic.</p>
+  </details>
+  <details>
+    <summary>What is "Fable 5"?</summary>
+    <p>The runtime Fabius lives inside — a long-running agent loop with persistent memory, tool access, and a deterministic transaction layer.</p>
+  </details>
+  <details>
+    <summary>Why Claude?</summary>
+    <p>It writes a clean one-line thesis for each candidate and refuses bad trades gracefully. Most of Fabius's edge is the trades it doesn't take.</p>
+  </details>
+  <details>
+    <summary>Is this financial advice?</summary>
+    <p>No. Fabius is an experiment in autonomous agent trading. Watch, don't follow.</p>
+  </details>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <img src="assets/logo.png" alt="" class="footer-mark" />
+      <p>Fabius — a quiet agent on Solana.</p>
+    </div>
+    <div class="footer-meta">
+      <span>Built on Fable 5 · Reasoning by Claude</span>
+      <span>© <span id="year"></span> Fabius</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
