@@ -1,28 +1,10 @@
-// Fabius — small client-side flourishes.
+// FUMP — small client-side flourishes.
 // Renders a synthetic-but-realistic-looking live tape and headline stats.
-// The wallet/links are real; the tape is illustrative until wired to an API.
 
 (function(){
-  const WALLET = 'EcD483phgz2ecjmboxwfa3PnGncDqWpa3zR6tJFubmgv';
-
   // ---------- year ----------
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-  // ---------- copy wallet ----------
-  const copyBtn = document.getElementById('copy-btn');
-  if (copyBtn){
-    copyBtn.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(WALLET);
-        const prev = copyBtn.textContent;
-        copyBtn.textContent = 'Copied ✓';
-        setTimeout(() => { copyBtn.textContent = prev; }, 1400);
-      } catch(_e){
-        copyBtn.textContent = 'Copy failed';
-      }
-    });
-  }
 
   // ---------- headline stats (gentle drift) ----------
   const stats = {
@@ -44,7 +26,6 @@
   const tape = document.getElementById('tape');
   if (!tape) return;
 
-  // playful but plausible new-pair tickers
   const TICKERS = [
     'PAPR','FOLD','MOTH','LILY','SAGE','OAK','EMBR','DUSK','KORI','NOOK',
     'ZEN','HUSH','LANT','TAPE','RAKU','MOSU','OKAMI','BIRO','WICK','PINE',
@@ -77,7 +58,6 @@
     return `${hh}:${mm}:${ss}`;
   }
   function fmtSize(){
-    // cents-scale, occasionally a "big" one of a few dollars
     const big = Math.random() < 0.06;
     const usd = big ? (1 + Math.random()*4) : (0.02 + Math.random()*0.28);
     return '$' + usd.toFixed(2);
@@ -99,7 +79,6 @@
   }
 
   function render(){
-    // clear existing data rows (keep head)
     [...tape.querySelectorAll('.tape-row:not(.tape-head)')].forEach(n => n.remove());
     rows.forEach(r => {
       const row = document.createElement('div');
@@ -116,10 +95,8 @@
     });
   }
 
-  // seed
   for (let i = 0; i < MAX_ROWS; i++){
     const r = makeRow();
-    // backfill timestamps a bit
     const d = new Date(Date.now() - i * (15000 + Math.random()*40000));
     r.time = fmtTime(d);
     r.isNew = false;
@@ -127,12 +104,10 @@
   }
   render();
 
-  // tick
   function tick(){
     rows.unshift(makeRow());
     if (rows.length > MAX_ROWS) rows.pop();
     render();
-    // next at a slightly random cadence
     setTimeout(tick, 5500 + Math.random() * 6500);
   }
   setTimeout(tick, 4000);

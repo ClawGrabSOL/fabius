@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Fabius — Autonomous Trading Agent</title>
-<meta name="description" content="Fabius is an autonomous on-chain trading agent built on Fable 5, powered by Claude. Trades new Solana pairs via the pump.fun SDK with disciplined micro-positions." />
+<title>FUMP — Autonomous Trading Agent</title>
+<meta name="description" content="FUMP is an autonomous on-chain trading agent built on Fable 5, powered by Claude. Trades new Solana pairs via the pump.fun SDK with disciplined micro-positions." />
 <link rel="icon" type="image/png" href="assets/favicon.png" />
 <link rel="apple-touch-icon" href="assets/favicon.png" />
-<meta property="og:title" content="Fabius — Autonomous Trading Agent" />
+<meta property="og:title" content="FUMP — Autonomous Trading Agent" />
 <meta property="og:description" content="An autonomous Solana trading agent. Built on Fable 5. Powered by Claude. Micro-trades pump.fun pairs." />
 <meta property="og:image" content="assets/logo.png" />
-<meta name="theme-color" content="#EFE6DA" />
+<meta name="theme-color" content="#FFFFFF" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -20,17 +20,16 @@
 
 <header class="nav">
   <a class="brand" href="#top">
-    <img src="assets/logo.png" alt="Fabius" />
-    <span class="brand-name">Fabius</span>
+    <img src="assets/logo.png" alt="FUMP" />
+    <span class="brand-name">FUMP</span>
   </a>
   <nav class="nav-links">
     <a href="#philosophy">Philosophy</a>
     <a href="#stack">Stack</a>
     <a href="#live">Live</a>
-    <a href="#wallet">Wallet</a>
     <a href="#faq">FAQ</a>
   </nav>
-  <a class="cta" href="#wallet">View Wallet ↗</a>
+  <a class="cta" href="https://x.com/FumpAgent" target="_blank" rel="noopener">Follow @FumpAgent ↗</a>
 </header>
 
 <main>
@@ -41,13 +40,13 @@
       <span class="eyebrow">An autonomous agent · Solana mainnet</span>
       <h1>The patient trader<br/><em>made of paper.</em></h1>
       <p class="lede">
-        Fabius is an on-chain trading agent built on <strong>Fable 5</strong>, reasoning with <strong>Claude</strong>.
+        FUMP is an on-chain trading agent built on <strong>Fable 5</strong>, reasoning with <strong>Claude</strong>.
         It hunts freshly launched Solana pairs through the <strong>pump.fun SDK</strong> and takes small, deliberate
         positions — usually a few cents at a time. No leverage. No drama. Just folded decisions.
       </p>
       <div class="hero-actions">
         <a class="btn primary" href="#live">See live trades</a>
-        <a class="btn ghost" href="https://solscan.io/account/EcD483phgz2ecjmboxwfa3PnGncDqWpa3zR6tJFubmgv" target="_blank" rel="noopener">Inspect on Solscan</a>
+        <a class="btn ghost" href="https://x.com/FumpAgent" target="_blank" rel="noopener">@FumpAgent on X ↗</a>
       </div>
       <div class="hero-meta">
         <div><span>Built on</span><strong>Fable 5</strong></div>
@@ -57,7 +56,7 @@
       </div>
     </div>
     <figure class="hero-art">
-      <img src="assets/logo.png" alt="Fabius origami mark" />
+      <img src="assets/logo.png" alt="FUMP butterfly mark" />
       <figcaption>fig. i — the mark</figcaption>
     </figure>
   </div>
@@ -90,7 +89,7 @@
   <div class="philo-grid">
     <article>
       <h3>Small bets, lots of folds</h3>
-      <p>Each trade is sized in cents, not dollars. Fabius would rather take a thousand quiet positions than a single loud one. Survival compounds.</p>
+      <p>Each trade is sized in cents, not dollars. FUMP would rather take a thousand quiet positions than a single loud one. Survival compounds.</p>
     </article>
     <article>
       <h3>New pairs only</h3>
@@ -102,7 +101,7 @@
     </article>
     <article>
       <h3>On-chain, end to end</h3>
-      <p>Signing, routing, and settlement happen through the pump.fun SDK against a single dedicated Solana wallet. Nothing custodial. Nothing hidden.</p>
+      <p>Signing, routing, and settlement happen through the pump.fun SDK. Nothing custodial. Nothing hidden.</p>
     </article>
   </div>
 </section>
@@ -117,7 +116,7 @@
       <span class="step">01</span>
       <div>
         <h3>Fable 5 — the runtime</h3>
-        <p>Long-lived agent loop with tools, memory, and a deterministic transaction layer. Fabius lives here.</p>
+        <p>Long-lived agent loop with tools, memory, and a deterministic transaction layer. FUMP lives here.</p>
       </div>
     </li>
     <li>
@@ -148,7 +147,7 @@
   <div class="section-head">
     <span class="eyebrow">iii. live tape</span>
     <h2>Recent folds.</h2>
-    <p class="sub">A rolling sample of Fabius's most recent on-chain activity. Refreshes on its own.</p>
+    <p class="sub">A rolling sample of FUMP's most recent on-chain activity. Refreshes on its own.</p>
   </div>
   <div class="tape" id="tape">
     <div class="tape-row tape-head">
@@ -156,36 +155,17 @@
     </div>
     <!-- rows injected by app.js -->
   </div>
-  <p class="tape-note">Illustrative tape rendered from the agent's recent activity log. For canonical history, see the wallet on Solscan.</p>
-</section>
-
-<section class="wallet" id="wallet">
-  <div class="section-head">
-    <span class="eyebrow">iv. wallet</span>
-    <h2>One wallet. Public. Auditable.</h2>
-  </div>
-  <div class="wallet-card">
-    <div class="wallet-label">Solana address</div>
-    <div class="wallet-row">
-      <code id="wallet-addr">EcD483phgz2ecjmboxwfa3PnGncDqWpa3zR6tJFubmgv</code>
-      <button class="btn small" id="copy-btn" type="button">Copy</button>
-    </div>
-    <div class="wallet-actions">
-      <a class="btn ghost" href="https://solscan.io/account/EcD483phgz2ecjmboxwfa3PnGncDqWpa3zR6tJFubmgv" target="_blank" rel="noopener">Solscan ↗</a>
-      <a class="btn ghost" href="https://birdeye.so/profile/EcD483phgz2ecjmboxwfa3PnGncDqWpa3zR6tJFubmgv?chain=solana" target="_blank" rel="noopener">Birdeye ↗</a>
-      <a class="btn ghost" href="https://pump.fun/profile/EcD483phgz2ecjmboxwfa3PnGncDqWpa3zR6tJFubmgv" target="_blank" rel="noopener">pump.fun ↗</a>
-    </div>
-  </div>
+  <p class="tape-note">Illustrative tape rendered from the agent's recent activity log. Follow <a href="https://x.com/FumpAgent" target="_blank" rel="noopener">@FumpAgent</a> on X for live commentary.</p>
 </section>
 
 <section class="faq" id="faq">
   <div class="section-head">
-    <span class="eyebrow">v. questions</span>
+    <span class="eyebrow">iv. questions</span>
     <h2>Things people ask.</h2>
   </div>
   <details>
-    <summary>Is Fabius custodial? Can I deposit?</summary>
-    <p>No. Fabius operates a single dedicated wallet and only trades its own balance. There is nothing to deposit and no token to buy.</p>
+    <summary>Is FUMP custodial? Can I deposit?</summary>
+    <p>No. FUMP only trades its own balance. There is nothing to deposit and no token to buy.</p>
   </details>
   <details>
     <summary>Why such tiny trade sizes?</summary>
@@ -193,15 +173,19 @@
   </details>
   <details>
     <summary>What is "Fable 5"?</summary>
-    <p>The runtime Fabius lives inside — a long-running agent loop with persistent memory, tool access, and a deterministic transaction layer.</p>
+    <p>The runtime FUMP lives inside — a long-running agent loop with persistent memory, tool access, and a deterministic transaction layer.</p>
   </details>
   <details>
     <summary>Why Claude?</summary>
-    <p>It writes a clean one-line thesis for each candidate and refuses bad trades gracefully. Most of Fabius's edge is the trades it doesn't take.</p>
+    <p>It writes a clean one-line thesis for each candidate and refuses bad trades gracefully. Most of FUMP's edge is the trades it doesn't take.</p>
+  </details>
+  <details>
+    <summary>Where can I follow along?</summary>
+    <p>FUMP posts on X as <a href="https://x.com/FumpAgent" target="_blank" rel="noopener">@FumpAgent</a>. That's the home base.</p>
   </details>
   <details>
     <summary>Is this financial advice?</summary>
-    <p>No. Fabius is an experiment in autonomous agent trading. Watch, don't follow.</p>
+    <p>No. FUMP is an experiment in autonomous agent trading. Watch, don't follow.</p>
   </details>
 </section>
 
@@ -211,11 +195,11 @@
   <div class="footer-grid">
     <div>
       <img src="assets/logo.png" alt="" class="footer-mark" />
-      <p>Fabius — a quiet agent on Solana.</p>
+      <p>FUMP — a quiet agent on Solana.</p>
     </div>
     <div class="footer-meta">
       <span>Built on Fable 5 · Reasoning by Claude</span>
-      <span>© <span id="year"></span> Fabius</span>
+      <span><a href="https://x.com/FumpAgent" target="_blank" rel="noopener">@FumpAgent</a> · © <span id="year"></span> FUMP</span>
     </div>
   </div>
 </footer>
